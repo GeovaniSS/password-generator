@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-size: 34px;
+  color: #fff;
+}
+
+input, label, button {
+  font-family: 'Poppins';
+  outline: none;
+  border: none;
+}
+
+label {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#characters {
+  font-size: 16px;
+  width: 50px;
+  height: 20px;
+  text-align: right;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #457fca;
+  background: -webkit-linear-gradient(to right, #5691c8, #457fca); 
+  background: linear-gradient(to right, #5691c8, #457fca);
+}
+
+.display, .settings {
+  width: 600px;
+  background-color: #1f1d1d;
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px 40px;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.display-password {
+  width: 100%;
+  font-size: 24px;
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.display-options {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.display-options span {
+  cursor: pointer;
+  color: #fff;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generatePassBtn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(31, 29, 29);
+}

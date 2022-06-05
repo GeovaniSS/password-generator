@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet">
+  <title>Gerador de Senha</title>
+</head>
+<body>
+  <section class="container">
+    <h1>Gerador de senha</h1>
+
+    <div class="display">
+      <input type="text" class="display-password" id="password">
+      <div class="display-options">
+        <span class="material-icons-outlined generatePassIcon">loop</span>
+        <span class="material-icons-outlined">content_copy</span>
+      </div>
+    </div>
+
+    <div class="settings">
+      <div class="setting">
+        <label for="characters">Número de caracteres</label>
+        <input type="number" id="characters">
+      </div>
+
+      <div class="setting">
+        <label for="uppercase">Letra Maiúscula</label>
+        <input type="checkbox" id="uppercase">
+      </div>
+
+      <div class="setting">
+        <label for="lowercase">Letra Minúscula</label>
+        <input type="checkbox" id="lowercase">
+      </div>
+
+      <div class="setting">
+        <label for="number">Números</label>
+        <input type="checkbox" id="number">
+      </div>
+
+      <div class="setting">
+        <label for="symbol">Símbolos</label>
+        <input type="checkbox" id="symbol">
+      </div>
+    </div>
+
+    <button class="generatePassBtn" id="generate">Gerar senha</button>
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+</html>
