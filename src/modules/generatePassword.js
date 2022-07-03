@@ -37,4 +37,6 @@ export default () => {
 
     password += randNumber + randomUpperCase + randomLowerCase + randomSymbol
   }
+
+  return password
 }

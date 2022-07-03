@@ -6,6 +6,5 @@ const displayPassword = document.querySelector('#password')
 const generateIcon = document.querySelector('.generatePassIcon')
 const generateBtn = document.querySelector('.generatePassBtn')
 
-
-generateBtn.addEventListener('click', () => generatePassword())
-generateIcon.addEventListener('click', () => generatePassword())
+generateBtn.addEventListener('click', () => displayPassword.value = generatePassword())
+generateIcon.addEventListener('click', () => displayPassword.value = generatePassword())
