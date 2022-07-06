@@ -22,6 +22,10 @@ const randomPassword = () => {
   return randomPassword || 'Nada selecionado'
 }
 
+const updateClipboard = () => {
+  navigator.clipboard.writeText(displayPassword.value)
+}
+
 export default () => {
   generateIcon.addEventListener('click', () => displayPassword.value = randomPassword())
   generateBtn.addEventListener('click', () => displayPassword.value = randomPassword())
@@ -29,8 +33,4 @@ export default () => {
     navigator.permissions.query({name: "clipboard-write"})
       .then(() => updateClipboard())
   })
-}
-
-const updateClipboard = () => {
-  navigator.clipboard.writeText(displayPassword.value)
 }
