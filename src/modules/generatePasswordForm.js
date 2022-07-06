@@ -25,8 +25,12 @@ const randomPassword = () => {
 export default () => {
   generateIcon.addEventListener('click', () => displayPassword.value = randomPassword())
   generateBtn.addEventListener('click', () => displayPassword.value = randomPassword())
-  // copyToClipBoardIcon.addEventListener('click', () => {
-  //   displayPassword.select()
-  //   document.execCommand("Copy")
-  // })
+  copyToClipBoardIcon.addEventListener('click', () => {
+    navigator.permissions.query({name: "clipboard-write"})
+      .then(() => updateClipboard())
+  })
+}
+
+const updateClipboard = () => {
+  navigator.clipboard.writeText(displayPassword.value)
 }
